@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>Havita</title>
+
+    <link rel="stylesheet" href="fonts/montserrat.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <script
+      src="js/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="js/lt_landing_valid_form.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/lt_landing_script.js"
+    ></script>
+    <script type="text/javascript">
+      $jsonData = {
+        ID: {
+          currency: " rupiah",
+          productsum: 490000,
+          oldproductsum: 980000,
+          delivery: 0,
+          totalsum: "490000.00",
+        },
+        TH: {
+          currency: " \u0431\u0430\u0442",
+          productsum: 990,
+          oldproductsum: 1980,
+          delivery: 0,
+          totalsum: "990.00",
+        },
+      };
+    </script>
+
+    <style>
+      .ajax_loader {
+        display: none;
+      }
+      .sep img {
+        max-width: 20px;
+        margin: 0 auto;
+      }
+    </style>
+
+    <script
+     src="js/date.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        date = Date.today().addDays(-7);
+        date_2 = Date.today();
+
+        date = date.toString("dd.MM.yyyy");
+        date_2 = date_2.toString("dd.MM.yyyy");
+
+        $(".date_1").html(date);
+        $(".date_2").html(date_2);
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".reviews").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+    <!-- LT code insertion -->
+    <!-- /LT code insertion -->
+  </head>
+
+  <body>
+    <main>
+      <section class="s1">
+        <div class="s1-title">
+          <h1>Havita</h1>
+        </div>
+        <div class="s1-subtitle">
+          <span>OBAT PERTUMBUHAN RAMBUT TERBAIK</span>
+        </div>
+        <div class="s1-bg-block">
+          <p class="s1-bg-block-text">
+            Rambut indah dan tebal dalam <span>4</span> minggu.
+          </p>
+          <p class="s1-bg-block-discount">Diskon 50%</p>
+          <img src="img/s1-bg.jpg" alt="" />
+        </div>
+        <div class="container">
+          <div class="s1-list">
+            <div class="s1-list-item">
+              <img src="img/s1-1.png" alt="" />
+              <p>Mencegah rambut rontok</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-2.png" alt="" />
+              <p>Membuatnya tebal</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-3.png" alt="" />
+              <p>Mendorong pertumbuhan rambut baru</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="timer">
+            <div class="timer-title">Tawaran ini valid:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="price">
+              <div class="price-old">
+                <div>Harga umum:</div>
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+              <div class="price-new">
+                <div style="width: 100%">Harga hari ini:</div>
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+            <div class="s3-button-wrapper">
+              <a href="#form-sec" class="form-btn scroll-to"
+                >Lakukan pemesanan</a
+              >
+            </div>
+            <div class="form-count">
+              Promosi ini berlaku: <span class="date_1"></span> -
+              <span class="date_2"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="s2">
+            
+            <img src="img/s2-img.jpg" alt="">
+            <div class="container">
+                <h2>
+                    Причины
+                    <br>
+                    <span class="orange-bg">выпадения волос </span>
+                </h2>
+                <div class="s2-list">
+                    <div class="s2-list-item">
+                        <img src="img/s2-1.png" alt="">
+                        <p>
+                            Генетическая наследственность
+                        </p>
+                    </div>
+                    <div class="s2-list-item">
+                        <img src="img/s2-2.png" alt="">
+                        <p>
+                            Гормональные сбои
+                        </p>
+                    </div>
+                    <div class="s2-list-item">
+                        <img src="img/s2-3.png" alt="">
+                        <p>
+                            Плохая экология
+                        </p>
+                    </div>
+                    <div class="s2-list-item">
+                        <img src="img/s2-4.png" alt="">
+                        <p>
+                            Стресс
+                        </p>
+                    </div>
+                    <div class="s2-list-item">
+                        <img src="img/s2-5.png" alt="">
+                        <p>
+                            Воспаление волосяных фолликул
+                        </p>
+                    </div>
+                    <div class="s2-list-item">
+                        <img src="img/s2-6.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      <section class="s3">
+        <img src="img/s3-img.jpg" alt="" />
+        <div class="container">
+          <h2>
+            BERHENTI BERMIMPI <br />
+            <span class="bg-green">RAMBUT KUAT DAN TEBAL!</span>
+          </h2>
+        </div>
+        <img src="img/s3-img-2.png" alt="" class="s3-img2" />
+        <div class="container">
+          <p class="">
+            <b> Rahasia Havita</b> terletak pada formula unik yang menggunakan
+            komponen khusus - sel punca. Mereka meremajakan kulit kepala dengan
+            memblokir hormon yang menyebabkan rambut rontok. Efeknya merangsang
+            penampilan aktif rambut baru. Cukup memberi rambut Anda 5-10 menit
+            beberapa kali seminggu, dan dalam sebulan Anda akan melihat hasil
+            yang terlihat:
+          </p>
+          <img src="img/s3-img-3.jpg" alt="" class="s3-img3" />
+          <ul class="true-list">
+            <li>Membantu bahkan dalam kasus kebotakan yang paling parah</li>
+            <li>Keamanan mutlak</li>
+            <li>100% komposisi alami</li>
+            <li>Kesederhanaan dan kemudahan penggunaan</li>
+            <li>Hasil cepat untuk waktu yang lama</li>
+          </ul>
+        </div>
+        <div class="s3-info">
+          <p>
+            Havita adalah perawatan rambut rontok paling efektif untuk pria dan
+            wanita
+          </p>
+        </div>
+        <div class="s3-list">
+          <div class="s3-list-item">
+            <img src="img/s3-1.jpg" alt="" />
+            <p>Mengaktifkan mikrosirkulasi di kulit kepala</p>
+          </div>
+          <div class="s3-list-item">
+            <img src="img/s3-2.jpg" alt="" />
+            <p>Mengembalikan nutrisi folikel alami</p>
+          </div>
+          <div class="s3-list-item">
+            <img src="img/s3-3.jpg" alt="" />
+            <p>Menempatkan rambut ke fase pertumbuhan</p>
+          </div>
+        </div>
+        <div class="s3-button-wrapper">
+          <a href="#form-sec" class="form-btn scroll-to">Lakukan pemesanan</a>
+        </div>
+      </section>
+      <section class="s4">
+        <img src="1.gif" alt="" />
+        <div class="container">
+          <!-- <h2>
+                    состав маски Havita
+                    <span class="bg-green">максимально прост</span>
+                    <span class="bg-green">и эффективен</span>
+                </h2>
+                <div class="s4-list">
+                    <div class="s4-list-item">
+                        <img src="img/s4-1.jpg" alt="">
+                        <div class="s4-item-title">
+                            Кокосовое сыворотка
+                        </div>
+                        <p>
+                            Укрепляет волосы, ускоряет их рост и питает
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-2.jpg" alt="">
+                        <div class="s4-item-title">
+                            сыворотка ши
+                        </div>
+                        <p>
+                            Пробуждает «спящие» волосяные фолликулы
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-3.jpg" alt="">
+                        <div class="s4-item-title">
+                            сыворотка арганы
+                        </div>
+                        <p>
+                            Замедляет процессы старения волос и уменьшает их выпадение
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-4.jpg" alt="">
+                        <div class="s4-item-title">
+                            Биотин
+                        </div>
+                        <p>
+                            Улучшает кровоток, делая волосы более сильными
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-5.jpg" alt="">
+                        <div class="s4-item-title">
+                            Экстракт миндаля
+                        </div>
+                        <p>
+                            Устраняет секущиеся кончики, придает блеск
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-6.jpg" alt="">
+                        <div class="s4-item-title">
+                            сыворотка авокадо
+                        </div>
+                        <p>
+                            Устраняет шелушение кожи головы
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-7.jpg" alt="">
+                        <div class="s4-item-title">
+                            Протеины шелка
+                        </div>
+                        <p>
+                            Питают волосяные луковицы полезными микроэлементами
+                        </p>
+                    </div>
+                    <div class="s4-list-item">
+                        <img src="img/s4-8.jpg" alt="">
+                        <div class="s4-item-title">
+                            Кератин
+                        </div>
+                        <p>
+                            Делает волосы более плотными и густыми
+                        </p>
+                    </div>
+                </div> -->
+        </div>
+        <img src="img/s4-img1.jpg" alt="" />
+        <div class="container">
+          <img src="img/s4-img.jpg" alt="" class="s4-img2" />
+        </div>
+      </section>
+      <section class="s5">
+        <div class="container">
+          <h2>
+            PRINSIP <br />
+            <span class="bg-green">TINDAKAN</span>
+          </h2>
+          <div class="s5-list">
+            <div class="s5-list-item">
+              <div class="s5-item-img"><img src="img/s5-1.jpg" alt="" /></div>
+              <p>
+                Komponen aktif WonderHair merangsang pembukaan saluran kalium,
+                yang menyebabkan hiperpolarisasi membran sel.
+              </p>
+            </div>
+            <div class="s5-list-item">
+              <div class="s5-item-img"><img src="img/s5-2.jpg" alt="" /></div>
+              <p>
+                Pembuluh darah membesar, yang menyebabkan lebih banyak oksigen,
+                darah dan nutrisi mengalir ke folikel rambut. Hal ini
+                memungkinkan folikel yang lemah untuk tumbuh cukup banyak
+                sehingga rambut tumbuh lebih kuat selama sisa hidupnya.
+              </p>
+            </div>
+            <div class="s5-list-item">
+              <div class="s5-item-img"><img src="img/s5-3.jpg" alt="" /></div>
+              <p>
+                Saat folikel tumbuh, fase pertumbuhan rambut juga memanjang,
+                memungkinkannya menjadi lebih panjang dan lebih tebal. Folikel
+                memasuki fase anagen (pertumbuhan aktif). Agar sejumlah besar
+                rambut melewati fase pertumbuhan dan menjadi sehat, diperlukan
+                waktu 28 hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <h2>
+          LIHATLAH
+          <br />
+          <span class="orange-bg">VIDEO </span>
+        </h2>
+      </div>
+      <video width="480" height="320" controls>
+        <source src="1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <section class="s6">
+        <img src="img/s6-img1.jpg" alt="" />
+        <div class="container">
+          <h2>
+            SEDERHANA DAN MUDAH DIGUNAKAN,
+            <span class="bg-green">UNTUK CEPAT</span>
+            <span class="bg-green">DAN HASIL JANGKA PANJANG!</span>
+          </h2>
+        </div>
+        <div class="s6-list">
+          <div class="s6-list-item">
+            <div class="s6-item-img"><img src="img/s6-1.png" alt="" /></div>
+            <div class="s6-item-text">
+              <p>RAMBUT LEMBUT DAN HALUS</p>
+            </div>
+          </div>
+          <div class="s6-list-item">
+            <div class="s6-item-img"><img src="img/s6-2.png" alt="" /></div>
+            <div class="s6-item-text">
+              <p>MINIMALISASI KERUGIAN ALAM</p>
+            </div>
+          </div>
+          <div class="s6-list-item">
+            <div class="s6-item-img"><img src="img/s6-3.png" alt="" /></div>
+            <div class="s6-item-text">
+              <p>PENGURANGAN RAMBUT RONTOK HINGGA 99%</p>
+            </div>
+          </div>
+          <div class="s6-list-item">
+            <div class="s6-item-img"><img src="img/s6-4.png" alt="" /></div>
+            <div class="s6-item-text">
+              <p>HASIL YANG STABIL SELAMA BERTAHUN-TAHUN</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container">
+                <img src="img/s6-img2.png" alt="">
+
+                <div class="s6-serts">
+                    <div class="s6-sert-item">
+                        <img src="img/s6-sert1.jpg" alt="">
+                        <p>
+                            Сертификат
+                            соответствия
+                        </p>
+                    </div>
+                    <div class="s6-sert-item">
+                        <img src="img/s6-sert2.jpg" alt="">
+                        <p>
+                            Гарантия
+                            качества
+                        </p>
+                    </div>
+                </div>
+
+                <div class="s3-button-wrapper">
+                    <a href="#form-sec" class="form-btn scroll-to">Lakukan pemesanan</a>
+                </div>
+            </div> -->
+      </section>
+      <!-- <section class="s7">
+            <div class="container">
+                <h2>
+                    Обычные способы <br>
+                    активизации роста бороды
+                    <span class="orange-bg">малоэффективны!</span>
+                </h2>
+            </div>
+            <div class="s7-info">
+                <div class="s7-title">
+                    Масла
+                </div>
+                <div class="s7-item s7-item-1">
+                    Пересадка <br>
+                    волос
+                </div>
+                <div class="s7-item s7-item-2">
+                    Финастерид
+                </div>
+                <div class="s7-item s7-item-3">
+                    Обычные <br>
+                    спреи и крема
+                </div>
+                <div class="s7-item s7-item-4">
+                    Системы <br>
+                    замещения волос
+                </div>
+            </div>
+            <div class="container">
+                <ul class="s7-list false-list">
+                    <li>Нет гарантий, что эффект будет длительный</li>
+                    <li>Дорогостоящие процедуры</li>
+                    <li>Негативные побочные эффекты</li>
+                    <li>Отсутствие видимых результатов при поздних стадиях облысения</li>
+                </ul>
+            </div>
+        </section> -->
+      <section class="s8">
+        <div class="container" style="padding: 30px">
+          <h2>
+            SERUM UNIK <br />
+            Havita:
+          </h2>
+          <div class="s8-img-wrapper">
+            <img src="img/s7-1.jpg" alt="" />
+            <img src="img/pack.png" alt="" class="s8-pack" />
+          </div>
+          <div class="s8-list-wrapper">
+            <ul class="true-list">
+              <li>Hasil terjamin</li>
+              <li>Untuk pria dan wanita</li>
+              <li>Rambut tebal yang kuat</li>
+              <li>Hasil terlihat cepat</li>
+              <li>Kenyamanan penggunaan</li>
+              <li>Bahan alami</li>
+              <li>Cocok untuk semua jenis rambut</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="s8-warning">
+                <div class="s8-warn-title">
+                    <span>внимание!</span>
+                    остерегайтесь подделок!
+                </div>
+                <div class="s8-warn-box">
+                    Оригинальную маску Havita вы можете заказать только напрямую от производителя на нашем сайте
+                </div>
+            </div> -->
+      </section>
+      <!-- <section class="s9">
+            <div class="container">
+                <div class="s9-text">
+                    К сожалению, <u>в связи с высоким спросом</u> на нашу продукцию, мы вынуждены ввести ограничение:
+                </div>
+                <div class="s9-limit">
+                    <img src="img/pack2.png" alt="">
+                    не более 10 масок
+                    Havita в 1 руки
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <div class="timer">
+                    <div class="timer-title">Tawaran ini valid:</div>
+                    <div class="countbox"></div>
+                    <div class="timer-body">
+                        <div class="timer-item">
+                            <div class="timer-val">
+                                <div class="timer-num">
+                                    0
+                                </div>
+                                <div class="timer-num">
+                                    0
+                                </div>
+                            </div>
+                            <div class="timer-name">
+                                часов
+                            </div>
+                        </div>
+                        <div class="timer-separate">
+
+                        </div>
+                        <div class="timer-item">
+                            <div class="timer-val">
+                                <div class="timer-num">
+                                    0
+                                </div>
+                                <div class="timer-num">
+                                    0
+                                </div>
+                            </div>
+                            <div class="timer-name">
+                                минут
+                            </div>
+                        </div>
+                        <div class="timer-separate">
+
+                        </div>
+                        <div class="timer-item">
+                            <div class="timer-val">
+                                <div class="timer-num">
+                                    0
+                                </div>
+                                <div class="timer-num">
+                                    0
+                                </div>
+                            </div>
+                            <div class="timer-name">
+                                секунд
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="price">
+                        <div class="price-old">
+                            <div>Harga umum:</div>
+                            <div class="price-old-val oldproductsum"></div>
+                        </div>
+                        <div class="price-new">
+                            <div style="width: 100%;">Harga hari ini:</div>
+                            <span class="price-new-val productsum"></span>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <a href="#form-sec" class="form-btn scroll-to">Lakukan pemesanan</a>
+                    </div>
+                    <div class="form-count">
+                        Осталось
+                        <span>5</span>
+                        блокаторов по акции
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      <section class="s10">
+        <div class="container">
+          <h2>
+            APLIKASI SERUM <br />
+            <span class="bg-green">Havita</span>
+          </h2>
+          <div class="s10-list">
+            <div class="s10-list-item">
+              <img src="img/s10-1.png" alt="" />
+              <div class="s10-item-text">
+                <div class="s10-item-title">Langkah 1</div>
+                Oleskan serum ke wajah Anda, lalu pijat dengan lembut
+              </div>
+            </div>
+            <div class="s10-list-item">
+              <img src="img/s10-2.png" alt="" />
+              <div class="s10-item-text">
+                <div class="s10-item-title">Langkah 2</div>
+                Tunggu 5-10 menit agar bahan aktif Havita terserap
+              </div>
+            </div>
+            <div class="s10-list-item">
+              <img src="img/s10-3.png" alt="" />
+              <div class="s10-item-text">
+                <div class="s10-item-title">Langkah 3</div>
+                Cuci rambut Anda seperti biasa
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s11">
+        <div class="container">
+          <h2>
+            PENDAPAT <br />
+            AHLI
+          </h2>
+          <div class="s11-block white-block">
+            <img src="img/s11-doc.jpg" alt="" />
+            <p>
+              Siapa pun bisa mengalami kerontokan rambut, apa pun jenis
+              kelaminnya. Masalah lingkungan saat ini, kerja saraf yang
+              terus-menerus, dan nutrisi yang tidak seimbang memperburuk
+              kesehatan kulit kepala dan rambut.
+              <br /><br />
+              Akibatnya, rambut melemah, kehilangan kekuatan dan volume, menjadi
+              rapuh dan akibatnya rontok. Sebagai ahli trikologi, selama
+              bertahun-tahun, saya telah menguji banyak cara yang dapat membantu
+              pasien memperkuat rambut di rumah, mempertahankan penampilan
+              cantik, dan meningkatkan kesehatan folikel.
+              <br /><br />
+              <b>Havita Hair Serum</b> adalah penemuan nyata! Bahan alaminya
+              <b
+                >secara efektif memulihkan kesehatan kapiler, aliran darah, dan
+                folikel</b
+              >. Serum tersebut telah diuji dalam uji klinis yang menunjukkan
+              keefektifannya dalam memerangi kebotakan dan rambut rontok.
+              <span class="sep"><img src="img/sep.png" alt="" /></span>
+              <span class="block-name"> Augusto Henriquez </span> <br />
+              Professor, ahli trikologi, 35 tahun pengalaman
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="s12">
+        <div class="container">
+          <h2>
+            ORANG SUNGGUHAN - <br />
+            <span class="bg-green">ULASAN NYATA</span>
+          </h2>
+          <div class="reviews owl-carousel owl-theme">
+            <div class="s12-block white-block">
+              <img src="img/s12-1.jpg" alt="" />
+              <p>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">
+                    Sudah di usia 30, bercak botak mulai muncul, rambut mulai
+                    rontok. </font
+                  ><font style="vertical-align: inherit"
+                    >Secara kebetulan, saya diberikan produk penumbuh rambut
+                    Havita dan saya memutuskan untuk menyelamatkan yang masih
+                    ada. </font
+                  ><font style="vertical-align: inherit"
+                    >Awalnya saya tidak terlalu percaya, tetapi ketika saya
+                    mulai menggunakan produk ini secara teratur, saya
+                    memperhatikan pertumbuhan rambut. </font
+                  ><font style="vertical-align: inherit"
+                    >Setelah 2 minggu, saya melihat rambut halus. </font
+                  ><font style="vertical-align: inherit"
+                    >Kemudian saya menganggapnya serius, dan mulai
+                    mengaplikasikannya ke rambut saya setiap hari. </font
+                  ><font style="vertical-align: inherit"
+                    >Setelah sebulan, rambut menjadi lebih tebal, tetapi berbeda
+                    dari yang ada di seluruh kepala dan tumbuh di tempat yang
+                    tidak semula.
+                  </font></font
+                >
+                <span class="sep"><img src="img/chat.png" alt="" /></span>
+                <span class="block-name"> Kalinov Sergey </span> | 37 tahun
+              </p>
+            </div>
+            <div class="s12-block white-block">
+              <img src="img/s12-2.jpg" alt="" />
+              <p>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">
+                    Banyak pria menganggap kebotakan sebagai norma. </font
+                  ><font style="vertical-align: inherit"
+                    >Tapi saya tidak terbiasa terlihat seperti kakek, apalagi di
+                    usia saya, berkat genetika, sial ... Hal pertama yang ingin
+                    saya catat adalah efisiensi. </font
+                  ><font style="vertical-align: inherit"
+                    >Rambut telah tumbuh di bagian yang botak dan menjadi lebih
+                    tebal. </font
+                  ><font style="vertical-align: inherit"
+                    >Kedua, kerugian benar-benar berhenti. </font
+                  ><font style="vertical-align: inherit"
+                    >Ketiga, rambut tipis dan tipis tumbuh lebih kuat. </font
+                  ><font style="vertical-align: inherit"
+                    >Dalam sebulan, kepercayaan diri saya pada diri sendiri dan
+                    penampilan saya kembali kepada saya! </font
+                  ><font style="vertical-align: inherit"
+                    >Saya tidak melihat adanya efek samping, kecuali kepala saya
+                    kadang-kadang gatal, tetapi ini sama sekali tidak kritis dan
+                    semuanya berlalu dengan cepat. </font
+                  ><font style="vertical-align: inherit"
+                    >Terima kasih atas obat ajaibnya!
+                  </font></font
+                >
+                <span class="sep"><img src="img/chat.png" alt="" /></span>
+                <span class="block-name"> Vinokurov Denis </span> | 28 tahun
+              </p>
+            </div>
+            <div class="s12-block white-block">
+              <img src="img/s12-3.jpg" alt="" />
+              <p>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> Halo! </font
+                  ><font style="vertical-align: inherit"
+                    >Saya memutuskan untuk menulis kata-kata terima kasih. </font
+                  ><font style="vertical-align: inherit"
+                    >Saya memesan kursus serum HairForce Anda. </font
+                  ><font style="vertical-align: inherit"
+                    >Meskipun saya baru menggunakannya selama lebih dari
+                    sebulan, penata rambut saya tidak pernah berhenti memuji
+                    penampilan rambut saya sekarang. </font
+                  ><font style="vertical-align: inherit"
+                    >Mereka benar-benar menjadi lebih kuat! </font
+                  ><font style="vertical-align: inherit"
+                    >Di tempat-tempat di mana saya selalu memiliki sedikit
+                    rambut, saya melihat di sana bahwa pertumbuhan aktif rambut
+                    baru yang kuat telah dimulai. </font
+                  ><font style="vertical-align: inherit"
+                    >Saya sangat senang bahwa itu melampaui kata-kata! </font
+                  ><font style="vertical-align: inherit"
+                    >Saya sudah mencoba begitu banyak produk, ratusan sampo
+                    berbeda, dan banyak lagi. </font
+                  ><font style="vertical-align: inherit"
+                    >Dan hanya serum Anda yang memberikan efek luar biasa!
+                  </font></font
+                >
+                <span class="sep"><img src="img/chat.png" alt="" /></span>
+                <span class="block-name"> Lisenkova Christina </span> | 52 tahun
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s13">
+        <div class="container">
+          <h2>
+            PEMBAYARAN <br />
+            <span class="bg-green">& PENGIRIMAN </span>
+          </h2>
+          <div class="s13-list">
+            <div class="s13-list-item">
+              <img src="img/s13-1.png" alt="" />
+              <p>Pengiriman kurir cepat "ke pintu".</p>
+            </div>
+            <div class="s13-list-item">
+              <img src="img/s13-2.png" alt="" />
+              <p>Pembayaran untuk pesanan dilakukan setelah barang diterima</p>
+            </div>
+            <div class="s13-list-item">
+              <img src="img/s13-3.png" alt="" />
+              <p>
+                Kami selalu memeriksa barang sebelum pengiriman dan menjamin
+                kualitas 100%
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="img/s13-img.png" alt="" class="s13-img" />
+      </section>
+      <section class="s14 s1" id="form-sec">
+        <div class="s1-title">
+          <h1>Havita</h1>
+        </div>
+        <div class="s1-subtitle">
+          <span>OBAT PERTUMBUHAN RAMBUT TERBAIK</span>
+        </div>
+        <div class="s1-bg-block">
+          <p class="s1-bg-block-text">
+            Rambut indah dan tebal dalam <span>4</span> minggu.
+          </p>
+          <p class="s1-bg-block-discount">Diskon 50%</p>
+          <img src="img/s1-bg.jpg" alt="" />
+        </div>
+        <div class="container">
+          <div class="s1-list">
+            <div class="s1-list-item">
+              <img src="img/s1-1.png" alt="" />
+              <p>Mencegah rambut rontok</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-2.png" alt="" />
+              <p>Membuatnya tebal</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-3.png" alt="" />
+              <p>Mendorong pertumbuhan rambut baru</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="timer">
+            <div class="timer-title">Tawaran ini valid:</div>
+            <div class="countbox"></div>
+            <div class="timer-body">
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">часов</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">минут</div>
+              </div>
+              <div class="timer-separate"></div>
+              <div class="timer-item">
+                <div class="timer-val">
+                  <div class="timer-num">0</div>
+                  <div class="timer-num">0</div>
+                </div>
+                <div class="timer-name">секунд</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="price">
+              <div class="price-old">
+                <div>Harga umum:</div>
+                <div class="price-old-val oldproductsum"></div>
+              </div>
+              <div class="price-new">
+                <div style="width: 100%">Harga hari ini:</div>
+                <span class="price-new-val productsum"></span>
+              </div>
+            </div>
+            <form
+              action="https://havita-id-new.online-shop2021.com/success/"
+              method="post"
+              class="orderformcdn"
+            >
+              <div class="form-item">
+                <select
+                  name="country"
+                  class="countryselect form-control location"
+                >
+                  <option value="ID">Индонезия</option>
+                  <option value="TH">Тайланд</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="name"
+                  class="field form-control userneme"
+                  placeholder="Namamu"
+                  value=""
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="text"
+                  name="phone"
+                  class="field form-control phone"
+                  placeholder="Nomor telepon Anda"
+                  value=""
+                />
+              </div>
+              <input
+                type="hidden"
+                name="productsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="delivery" value="0 руб." />
+              <input
+                type="hidden"
+                name="totalsum"
+                class="productsum"
+                value="1 руб."
+              />
+              <input type="hidden" name="user" value="1" />
+              <input
+                type="hidden"
+                name="address"
+                value="Уточнить у покупателя"
+              />
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  onclick="checkFields(event, this);"
+                >
+                  Lakukan pemesanan
+                </button>
+                <div class="ajax_loader_block">
+                  <img
+                    class="ajax_loader"
+                    src="img/ajax-loader.gif"
+                    alt="Loading"
+                  />
+                  <span class="ajax_loader">Loading</span>
+                </div>
+              </div>
+              <div class="form-count">
+                Promosi ini berlaku: <span class="date_1"></span> -
+                <span class="date_2"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class=""
+          style="text-align: center; color: #222222; padding: 20px 0"
+        >
+          <a href="politika.html" target="_blank">Perjanjian Pengguna</a>
+          <a href="agreement.html" target="_blank">Kebijakan Privasi</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/count.js"></script>
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $(".scroll-to").click(function () {
+          var scrollElem = $(this).attr("href");
+          scrollTo(scrollElem);
+          return false;
+        });
+
+        function scrollTo(scrollElem) {
+          var offset = 20;
+          if ($(scrollElem).length != 0) {
+            $("html, body").animate(
+              {
+                scrollTop: $(scrollElem).offset().top - offset,
+              },
+              500
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
